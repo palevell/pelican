@@ -14,7 +14,7 @@ from pelicanconf import *
 SITEURL = 'https://palevell.github.io/pelican'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = None  # 'feeds/all.atom.xml'
+FEED_ALL_ATOM =  None  # 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None  # 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
