@@ -1,0 +1,14 @@
+pelican-themes/neat
+pelican-themes/pjport
+pelican-themes/subtle
+pelican-themes/attila
+pelican-themes/relapse
+pelican-themes/svbhack
+pelican-themes/lightweight
+pelican-themes/MinimalXY
+pelican-themes/hyde
+pelican-themes/SoMA
+pelican-themes/pelican-sober
+pelican-themes/minimalX
+pelican-themes/pelican-bootstrap3
+pelican-themes/pelican-twitchy
