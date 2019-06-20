@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Patrick" />
+        <meta name="keywords" content="pelican,pelican-themes" />
+        <meta name="description" content="After speeding through several Pelican themes, I have noticed a few things… Many of the themes don’t seem to work, anymore (UPDATE: most of them need the i18n_subsites plugin) Notes Theme Score Comments genus 5 simple, no menus, categories, or tags chunk 5 simple, no excerpts clean-blog 4 social …" />
+
+
+    <title>Evaluating Pelican Themes - Patrick's Place</title>
+
+        <link rel="stylesheet" href="https://palevell.github.io/ppc/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="https://palevell.github.io/ppc/theme/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://palevell.github.io/ppc/theme/css/pygments/native.css" rel="stylesheet" />
+    
+        <link href="https://palevell.github.io/ppc/theme/css/typogrify.css" rel="stylesheet" />
+    <link href="https://palevell.github.io/ppc/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+        <link href="https://palevell.github.io/ppc/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Patrick's Place ATOM Feed" />
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="https://palevell.github.io/ppc" title="Patrick's Place" class="collapsed">
+            <span class="glyphicon glyphicon-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="https://palevell.github.io/ppc/archives.html" title="Recent Articles" class="collapsed">
+            <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+    </li>
+                
+                <li class="nav-divider"></li>
+                <li id="share-small">
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
+                        <i class="fa fa-share-alt padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://palevell.github.io/ppc/evaluating-pelican-themes.html" title="Share via Facebook" target="popup">
+                            <i class="fa fa-facebook-square padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://palevell.github.io/ppc/evaluating-pelican-themes.html" title="Share via Google+" target="popup">
+                            <i class="fa fa-google-plus padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
+                            <i class="fa fa-twitter-square padding-small"></i>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fa fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="https://twitter.com/@palevell" title="@palevell"><i class="fa fa-@palevell-square fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/@PPC_Retweets" title="@PPC_Retweets"><i class="fa fa-@ppc_retweets-square fa-lg padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fa fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="https://palevell.github.io/ppc/">
+<img src="https://palevell.github.io/ppc/images/ppc-logo_180x.png" width="125" alt="Sitelogo"/>                     </a>
+                </li>
+                    <li class="nav-divider"></li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-latest">
+                            <span class="glyphicon glyphicon-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                    <li class="panel anti-panel"><ul id="collapse-latest" class="sidebar_submenu collapse in">
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-sub-categories-2.html" title="Evaluating Sub-Categories, Part Two">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Sub-Categories, Part Two
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-sub-categories-1.html" title="Evaluating Sub-Categories, Part One">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Sub-Categories, Part One
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/first-entry-in-articles.html" title="First Entry in Articles">
+                                <i class="fa fa-file-text padding-small"></i>
+                                First Entry in Articles
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/pelican-themes-randomizer.html" title="Pelican Themes Randomizer">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Pelican Themes Randomizer
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-pelican-themes.html" title="Evaluating Pelican Themes">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Pelican Themes
+                            </a>
+                        </li>
+                    <li>
+                        <a href="https://palevell.github.io/ppc/archives.html">
+                            <i class="fa fa-arrow-right padding-small"></i>
+                            More
+                        </a>
+                    </li>
+                    </ul></li>
+                <li class="nav-divider"></li>
+                <li id="share">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
+                        <i class="fa fa-share-alt padding-small"></i>
+                        Share
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://palevell.github.io/ppc/evaluating-pelican-themes.html" target="popup">
+                            <i class="fa fa-facebook-square padding-small"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://palevell.github.io/ppc/evaluating-pelican-themes.html" target="popup">
+                            <i class="fa fa-google-plus padding-small"></i>
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
+                            <i class="fa fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fa fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://twitter.com/@palevell" title="@palevell">
+                            <i class="fa fa-@palevell-square fa-lg padding-small"></i>
+                            @palevell
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/@PPC_Retweets" title="@PPC_Retweets">
+                            <i class="fa fa-@ppc_retweets-square fa-lg padding-small"></i>
+                            @PPC_Retweets
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://palevell.github.io/ppc/pages/about-us.html">
+                            <i class="fa fa-file-text padding-small"></i>
+                            About&nbsp;Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://palevell.github.io/ppc/pages/contact-us.html">
+                            <i class="fa fa-file-text padding-small"></i>
+                            Contact&nbsp;Us
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/bands.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            bands
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/blogging.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            blogging
+                            <span class="badge pull-right categorybadge">2</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="https://palevell.github.io/ppc/category/posts.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            posts
+                            <span class="badge pull-right categorybadge">3</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/review.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            Review
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/sub-category.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            sub-category
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/sub-sub-category.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            sub-sub-category
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/yeah.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            yeah
+                            <span class="badge pull-right categorybadge">2</span>
+                        </a>
+                    </li>
+                </ul></li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="https://palevell.github.io/ppc/evaluating-pelican-themes.html"
+                           rel="bookmark"
+                           title="Permalink to Evaluating Pelican Themes">
+                            Evaluating Pelican&nbsp;Themes
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2019-06-19T13:13:13-04:00"> Wed 19 June 2019</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="https://palevell.github.io/ppc/category/posts.html">posts</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="https://palevell.github.io/ppc/tag/pelican.html">pelican</a> /                 <a href="https://palevell.github.io/ppc/tag/pelican-themes.html">pelican-themes</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <p>After speeding through several Pelican themes, I have noticed a few&nbsp;things&#8230;</p>
+<ul>
+<li>Many of the themes don&#8217;t seem to work, anymore 
+  (<span class="caps">UPDATE</span>: most of them need the <em>i18n_subsites</em>&nbsp;plugin)</li>
+</ul>
+<h3>Notes</h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th align="center">Score</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>genus</td>
+<td align="center">5</td>
+<td>simple, no menus, categories, or tags</td>
+</tr>
+<tr>
+<td>chunk</td>
+<td align="center">5</td>
+<td>simple, no excerpts</td>
+</tr>
+<tr>
+<td>clean-blog</td>
+<td align="center">4</td>
+<td>social media sharing buttons don&#8217;t work</td>
+</tr>
+<tr>
+<td>pelican-hss</td>
+<td align="center">4</td>
+<td>needs work</td>
+</tr>
+<tr>
+<td>html5-dopetrope</td>
+<td align="center">3</td>
+<td>columns are nice, but don&#8217;t handle GitHub gists well</td>
+</tr>
+<tr>
+<td>Flex</td>
+<td align="center">7</td>
+<td>I like this one&#8212;it&#8217;s clean and easy to navigate; I hope I can change the masthead</td>
+</tr>
+<tr>
+<td>medius</td>
+<td align="center">8</td>
+<td>plain, simple, elegant, clean, easy to navigate;</td>
+</tr>
+<tr>
+<td>medius</td>
+<td align="center">8</td>
+<td>no images, contact info, or social media;</td>
+</tr>
+<tr>
+<td>medius</td>
+<td align="center">8</td>
+<td>good for focusing on content;</td>
+</tr>
+<tr>
+<td>medius</td>
+<td align="center">8</td>
+<td>tables could be fancier, but it&#8217;s okay.</td>
+</tr>
+<tr>
+<td>svbtle</td>
+<td align="center">6</td>
+<td>plain <span class="amp">&amp;</span> simple, don&#8217;t like &#8220;Patrick&#8221; in sidebar, instead of &#8220;Pelican&#8221;</td>
+</tr>
+<tr>
+<td>nikhil-theme</td>
+<td align="center">5</td>
+<td>this looks like a theme for log entries, which may be okay for indexing Top <span class="caps">XX</span> Lists, but it is boring, and needs work</td>
+</tr>
+<tr>
+<td>pelican-fh5co-marble</td>
+<td align="center">4</td>
+<td>columnar, doesn&#8217;t handle embedded objects nicely in columns&#8212;too bad</td>
+</tr>
+<tr>
+<td>Nuja</td>
+<td align="center">6</td>
+<td>Nice card-style layout, a tad buggy</td>
+</tr>
+<tr>
+<td>sundown</td>
+<td align="center">4</td>
+<td>Okay layout, okay tables, too light</td>
+</tr>
+<tr>
+<td>nest</td>
+<td align="center">1</td>
+<td>Too much doesn&#8217;t work</td>
+</tr>
+<tr>
+<td>elegant</td>
+<td align="center">2</td>
+<td>simple, but buggy, could work for logs</td>
+</tr>
+<tr>
+<td>semantic-ui</td>
+<td align="center">4</td>
+<td>I like it, but the title is cut-off</td>
+</tr>
+<tr>
+<td>uikit</td>
+<td align="center">5</td>
+<td>Buggy</td>
+</tr>
+<tr>
+<td>Just-Read</td>
+<td align="center">6</td>
+<td>still okay</td>
+</tr>
+<tr>
+<td>pelican-twitcy</td>
+<td align="center">7</td>
+<td>I like it, but the share buttons don&#8217;t work.</td>
+</tr>
+</tbody>
+</table>
+<h3>First&nbsp;Impressions</h3>
+<ul>
+<li>Themes I like:<ul>
+<li>pelican-twitchy</li>
+<li>bold</li>
+<li>Just&nbsp;Read</li>
+<li>Genus</li>
+<li>bricks</li>
+<li>Atilla</li>
+<li><strong>materialistic</strong> (very&nbsp;much!)</li>
+<li><strong>Plumage</strong></li>
+<li>pelican-cait</li>
+</ul>
+</li>
+<li>Boostrap colour schemes that are worth exploring:<ul>
+<li>simplex</li>
+</ul>
+</li>
+<li>Themes I like, but need improvement:<ul>
+<li>Pelican&nbsp;Blue</li>
+<li>Monospace</li>
+<li>Taman</li>
+<li>voidy-bootstrap</li>
+<li>nikhil-theme</li>
+<li>bootstrap</li>
+</ul>
+</li>
+<li>Themes with tweet display potential:<ul>
+<li>New&nbsp;Bootstrap2</li>
+</ul>
+</li>
+<li>Incomplete themes, can be deleted:<ul>
+<li>lazystrap</li>
+<li>niu-x2</li>
+</ul>
+</li>
+<li>Themes with images:<ul>
+<li>SoMA</li>
+<li>Taman</li>
+<li>Atilla</li>
+</ul>
+</li>
+</ul>
+                </div>
+                <footer class="text-right">
+                    <p>- Patrick</p>
+                </footer>
+            </div>
+        </div>
+    </article>
+<section>
+  <p id="post-share-links">
+    Share on:
+    <a href="https://sharetodiaspora.github.io/?title=Evaluating%20Pelican%C2%A0Themes&url=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html" target="_blank" title="Share on Diaspora">Diaspora*</a>
+    ❄
+    <a href="https://twitter.com/intent/tweet?text=Evaluating%20Pelican%C2%A0Themes&url=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html&hashtags=pelican,pelican-themes" target="_blank" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html" target="_blank" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html&title=Evaluating%20Pelican%C2%A0Themes&summary=After%20speeding%20through%20several%20Pelican%20themes%2C%20I%20have%20noticed%20a%20few%C2%A0things%E2%80%A6%0A%0AMany%20of%20the%20themes%20don%E2%80%99t%20seem%20to%20work%2C%20anymore%20%0A%20%20%28UPDATE%3A%20most%20of%20them%20need%20the%20i18n_subsites%C2%A0plugin%29%0A%0ANotes%0A%0A%0A%0ATheme%0AScore%0AComments%0A%0A%0A%0A%0Agenus%0A5%0Asimple%2C%20no%20menus%2C%20categories%2C%20or%20tags%0A%0A%0Achunk%0A5%0Asimple%2C%20no%20excerpts%0A%0A%0Aclean-blog%0A4%0Asocial%20%E2%80%A6&source=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html" target="_blank" title="Share on LinkedIn">LinkedIn</a>
+    ❄
+    <a href="https://news.ycombinator.com/submitlink?t=Evaluating%20Pelican%C2%A0Themes&u=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html" target="_blank" title="Share on HackerNews">HackerNews</a>
+    ❄
+    <a href="mailto:?subject=Evaluating%20Pelican%C2%A0Themes&amp;body=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html" target="_blank" title="Share via Email">Email</a>
+    ❄
+    <a href="https://www.reddit.com/submit?url=https%3A//palevell.github.io/ppc/evaluating-pelican-themes.html&title=Evaluating%20Pelican%C2%A0Themes" target="_blank" title="Share via Reddit">Reddit</a>
+  </p>
+</section>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                    &copy; 2019 Patrick
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="https://palevell.github.io/ppc/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://palevell.github.io/ppc/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="https://palevell.github.io/ppc/theme/js/pelican_twitchy.min.js"></script>
+
+</body>
+</html>
