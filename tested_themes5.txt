@@ -1,5 +1,0 @@
-pelican-themes/svbhack
-pelican-themes/genus
-pelican-themes/pelican-twitchy
-pelican-themes/built-texts
-pelican-themes/lovers

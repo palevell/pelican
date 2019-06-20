@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Patrick's Place</title><link href="https://palevell.github.io/pelican/" rel="alternate"></link><link href="https://palevell.github.io/pelican/feeds/all.atom.xml" rel="self"></link><id>https://palevell.github.io/pelican/</id><updated>2019-06-20T14:17:33-04:00</updated><entry><title>Evaluating Sub-Categories, Part Two</title><link href="https://palevell.github.io/pelican/evaluating-sub-categories-2.html" rel="alternate"></link><published>2019-06-20T14:02:02-04:00</published><updated>2019-06-20T14:02:02-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-20:/pelican/evaluating-sub-categories-2.html</id><summary type="html">&lt;p&gt;Testing the directory structure, Part&amp;nbsp;Two&lt;/p&gt;</summary><content type="html">&lt;p&gt;Does the Pelican directory structure support sub-sub-categories?  This seems to be&amp;nbsp;them-specific.&lt;/p&gt;</content><category term="pelican"></category><category term="pelican-themes"></category></entry><entry><title>Evaluating Sub-Categories, Part One</title><link href="https://palevell.github.io/pelican/evaluating-sub-categories-1.html" rel="alternate"></link><published>2019-06-20T14:01:01-04:00</published><updated>2019-06-20T14:01:01-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-20:/pelican/evaluating-sub-categories-1.html</id><summary type="html">&lt;p&gt;Does the Pelican directory structure support sub-categories?  This seems to be&amp;nbsp;them-specific.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Does the Pelican directory structure support sub-categories?  This seems to be&amp;nbsp;them-specific.&lt;/p&gt;</content><category term="pelican"></category><category term="pelican-themes"></category></entry><entry><title>First Entry in Articles</title><link href="https://palevell.github.io/pelican/first-entry-in-articles.html" rel="alternate"></link><published>2019-06-20T12:34:56-04:00</published><updated>2019-06-20T12:34:56-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-20:/pelican/first-entry-in-articles.html</id><summary type="html">&lt;p&gt;This is like, a &lt;span class="caps"&gt;TOTALLY&lt;/span&gt; awsome&amp;nbsp;article!&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is like, a &lt;span class="caps"&gt;TOTALLY&lt;/span&gt; awsome&amp;nbsp;article!&lt;/p&gt;</content><category term="python"></category><category term="markdown"></category><category term="pelican"></category></entry><entry><title>Pelican Themes Randomizer</title><link href="https://palevell.github.io/pelican/pelican-themes-randomizer.html" rel="alternate"></link><published>2019-06-20T08:22:22-04:00</published><updated>2019-06-20T08:24:22-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-20:/pelican/pelican-themes-randomizer.html</id><summary type="html">&lt;p&gt;To streamline testing operations, I opted to move the theme-picker out of the pelican settings&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;With this setup, this script &lt;code&gt;random_theme&lt;/code&gt; can be executed before building the site, as shown in the following&amp;nbsp;example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./random_theme &lt;span class="p"&gt;;&lt;/span&gt; make clean devserver
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&amp;#8212;&amp;nbsp;Enjoy!&lt;/p&gt;
+&lt;script src="https://gist.github.com/palevell/111bad0abe970095746d1d85bdde20bf.js"&gt;&lt;/script&gt;</summary><content type="html">&lt;p&gt;To streamline testing operations, I opted to move the theme-picker out of the pelican settings&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;With this setup, this script &lt;code&gt;random_theme&lt;/code&gt; can be executed before building the site, as shown in the following&amp;nbsp;example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./random_theme &lt;span class="p"&gt;;&lt;/span&gt; make clean devserver
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&amp;#8212;&amp;nbsp;Enjoy!&lt;/p&gt;
+&lt;script src="https://gist.github.com/palevell/111bad0abe970095746d1d85bdde20bf.js"&gt;&lt;/script&gt;</content><category term="pelican"></category><category term="pelican-themes"></category></entry><entry><title>Evaluating Pelican Themes</title><link href="https://palevell.github.io/pelican/evaluating-pelican-themes.html" rel="alternate"></link><published>2019-06-19T13:13:13-04:00</published><updated>2019-06-20T14:17:33-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-19:/pelican/evaluating-pelican-themes.html</id><summary type="html">&lt;p&gt;After speeding through several Pelican themes, I have noticed a few&amp;nbsp;things&amp;#8230;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many of the themes don&amp;#8217;t seem to work, anymore 
+  (&lt;span class="caps"&gt;UPDATE&lt;/span&gt;: most of them need the &lt;em&gt;i18n_subsites&lt;/em&gt;&amp;nbsp;plugin)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Theme&lt;/th&gt;
+&lt;th align="center"&gt;Score&lt;/th&gt;
+&lt;th&gt;Comments&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;genus&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;simple, no menus, categories, or tags&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chunk&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;simple, no excerpts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;clean-blog&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;social …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;After speeding through several Pelican themes, I have noticed a few&amp;nbsp;things&amp;#8230;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many of the themes don&amp;#8217;t seem to work, anymore 
+  (&lt;span class="caps"&gt;UPDATE&lt;/span&gt;: most of them need the &lt;em&gt;i18n_subsites&lt;/em&gt;&amp;nbsp;plugin)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Theme&lt;/th&gt;
+&lt;th align="center"&gt;Score&lt;/th&gt;
+&lt;th&gt;Comments&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;genus&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;simple, no menus, categories, or tags&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chunk&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;simple, no excerpts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;clean-blog&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;social media sharing buttons don&amp;#8217;t work&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pelican-hss&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;needs work&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;html5-dopetrope&lt;/td&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td&gt;columns are nice, but don&amp;#8217;t handle GitHub gists well&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Flex&lt;/td&gt;
+&lt;td align="center"&gt;7&lt;/td&gt;
+&lt;td&gt;I like this one&amp;#8212;it&amp;#8217;s clean and easy to navigate; I hope I can change the masthead&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medius&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td&gt;plain, simple, elegant, clean, easy to navigate;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medius&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td&gt;no images, contact info, or social media;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medius&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td&gt;good for focusing on content;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medius&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td&gt;tables could be fancier, but it&amp;#8217;s okay.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;svbtle&lt;/td&gt;
+&lt;td align="center"&gt;6&lt;/td&gt;
+&lt;td&gt;plain &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; simple, don&amp;#8217;t like &amp;#8220;Patrick&amp;#8221; in sidebar, instead of &amp;#8220;Pelican&amp;#8221;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nikhil-theme&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;this looks like a theme for log entries, which may be okay for indexing Top &lt;span class="caps"&gt;XX&lt;/span&gt; Lists, but it is boring, and needs work&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pelican-fh5co-marble&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;columnar, doesn&amp;#8217;t handle embedded objects nicely in columns&amp;#8212;too bad&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Nuja&lt;/td&gt;
+&lt;td align="center"&gt;6&lt;/td&gt;
+&lt;td&gt;Nice card-style layout, a tad buggy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sundown&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;Okay layout, okay tables, too light&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nest&lt;/td&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td&gt;Too much doesn&amp;#8217;t work&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;elegant&lt;/td&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td&gt;simple, but buggy, could work for logs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;semantic-ui&lt;/td&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td&gt;I like it, but the title is cut-off&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uikit&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td&gt;Buggy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Just-Read&lt;/td&gt;
+&lt;td align="center"&gt;6&lt;/td&gt;
+&lt;td&gt;still okay&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pelican-twitcy&lt;/td&gt;
+&lt;td align="center"&gt;7&lt;/td&gt;
+&lt;td&gt;I like it, but the share buttons don&amp;#8217;t work.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;First&amp;nbsp;Impressions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Themes I like:&lt;ul&gt;
+&lt;li&gt;pelican-twitchy&lt;/li&gt;
+&lt;li&gt;bold&lt;/li&gt;
+&lt;li&gt;Just&amp;nbsp;Read&lt;/li&gt;
+&lt;li&gt;Genus&lt;/li&gt;
+&lt;li&gt;bricks&lt;/li&gt;
+&lt;li&gt;Atilla&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;materialistic&lt;/strong&gt; (very&amp;nbsp;much!)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plumage&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;pelican-cait&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Boostrap colour schemes that are worth exploring:&lt;ul&gt;
+&lt;li&gt;simplex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Themes I like, but need improvement:&lt;ul&gt;
+&lt;li&gt;Pelican&amp;nbsp;Blue&lt;/li&gt;
+&lt;li&gt;Monospace&lt;/li&gt;
+&lt;li&gt;Taman&lt;/li&gt;
+&lt;li&gt;voidy-bootstrap&lt;/li&gt;
+&lt;li&gt;nikhil-theme&lt;/li&gt;
+&lt;li&gt;bootstrap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Themes with tweet display potential:&lt;ul&gt;
+&lt;li&gt;New&amp;nbsp;Bootstrap2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Incomplete themes, can be deleted:&lt;ul&gt;
+&lt;li&gt;lazystrap&lt;/li&gt;
+&lt;li&gt;niu-x2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Themes with images:&lt;ul&gt;
+&lt;li&gt;SoMA&lt;/li&gt;
+&lt;li&gt;Taman&lt;/li&gt;
+&lt;li&gt;Atilla&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="pelican"></category><category term="pelican-themes"></category></entry><entry><title>Pelican Themes</title><link href="https://palevell.github.io/pelican/pelican-themes.html" rel="alternate"></link><published>2019-06-19T11:44:55-04:00</published><updated>2019-06-19T11:44:55-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2019-06-19:/pelican/pelican-themes.html</id><summary type="html">&lt;p&gt;I have been investigating &lt;a href="https://blog.getpelican.com"&gt;Pelican&lt;/a&gt; as a static web site generator for &lt;a href="https://www.python.org"&gt;Python&lt;/a&gt;.
+During that time, I came across a plethora of themes in the &lt;a href="http://www.pelicanthemes.com"&gt;pelican-themes&lt;/a&gt; project,
+which contains over 100 themes&amp;#8212;many of them using &lt;a href="https://getbootstrap.com"&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To test them out, I modified the Pelican config file, &lt;code&gt;pelicanconf.py&lt;/code&gt; to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have been investigating &lt;a href="https://blog.getpelican.com"&gt;Pelican&lt;/a&gt; as a static web site generator for &lt;a href="https://www.python.org"&gt;Python&lt;/a&gt;.
+During that time, I came across a plethora of themes in the &lt;a href="http://www.pelicanthemes.com"&gt;pelican-themes&lt;/a&gt; project,
+which contains over 100 themes&amp;#8212;many of them using &lt;a href="https://getbootstrap.com"&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To test them out, I modified the Pelican config file, &lt;code&gt;pelicanconf.py&lt;/code&gt; to pick a random theme 
+every time the site is generated, as follows: 
+&lt;script src="https://gist.github.com/palevell/6e297554f1389971988813ddd69724ef.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;The file containing the list of &lt;a href="http://www.pelicanthemes.com"&gt;pelican-themes&lt;/a&gt; looks like the following:
+&lt;script src="https://gist.github.com/palevell/711a8393bde6a6462df9050b564bda09.js"&gt;&lt;/script&gt;&lt;/p&gt;</content></entry><entry><title>Matt’s First Blog Post</title><link href="https://palevell.github.io/pelican/matts-first-blog-post.html" rel="alternate"></link><published>2019-01-01T09:00:00-04:00</published><updated>2019-01-01T09:00:00-04:00</updated><author><name>Matthew Devaney</name></author><id>tag:palevell.github.io,2019-01-01:/pelican/matts-first-blog-post.html</id><summary type="html">&lt;p&gt;Blog post content goes&amp;nbsp;here&lt;/p&gt;</summary><content type="html">&lt;p&gt;Blog post content goes&amp;nbsp;here&lt;/p&gt;</content><category term="python"></category><category term="markdown"></category><category term="pelican"></category></entry><entry><title>Gunship</title><link href="https://palevell.github.io/pelican/gunship.html" rel="alternate"></link><published>2017-06-09T00:00:00-04:00</published><updated>2017-06-09T00:00:00-04:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2017-06-09:/pelican/gunship.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;Gunship&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the &lt;span class="caps"&gt;UK&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=uYRZV8dV10w"&gt;Revel in Your Time&lt;/a&gt;, 
+&lt;a href="https://www.youtube.com/watch?v=-nC5TBv3sfU"&gt;Tech Noir&lt;/a&gt;, 
+&lt;a href="https://www.youtube.com/watch?v=Jv1ZN8c4_Gs"&gt;Fly for Your Life&lt;/a&gt; 
+and 
+&lt;a href="https://www.youtube.com/watch?v=-HYRTJr8EyA"&gt;The Mountain&lt;/a&gt; 
+are all quality songs by Gunship. Check out those amazing music&amp;nbsp;videos!&lt;/p&gt;
+&lt;p&gt;Also take a look at other retro synthwave artists such as
+&lt;a href="https://trevorsomething.bandcamp.com/"&gt;Trevor Something&lt;/a&gt;, 
+&lt;a href="https://droidbishop.bandcamp.com/"&gt;Droid Bishop …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;Gunship&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the &lt;span class="caps"&gt;UK&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=uYRZV8dV10w"&gt;Revel in Your Time&lt;/a&gt;, 
+&lt;a href="https://www.youtube.com/watch?v=-nC5TBv3sfU"&gt;Tech Noir&lt;/a&gt;, 
+&lt;a href="https://www.youtube.com/watch?v=Jv1ZN8c4_Gs"&gt;Fly for Your Life&lt;/a&gt; 
+and 
+&lt;a href="https://www.youtube.com/watch?v=-HYRTJr8EyA"&gt;The Mountain&lt;/a&gt; 
+are all quality songs by Gunship. Check out those amazing music&amp;nbsp;videos!&lt;/p&gt;
+&lt;p&gt;Also take a look at other retro synthwave artists such as
+&lt;a href="https://trevorsomething.bandcamp.com/"&gt;Trevor Something&lt;/a&gt;, 
+&lt;a href="https://droidbishop.bandcamp.com/"&gt;Droid Bishop&lt;/a&gt;,
+&lt;a href="https://fm84.bandcamp.com/"&gt;&lt;span class="caps"&gt;FM&lt;/span&gt;-84&lt;/a&gt;
+and 
+&lt;a href="https://danieldeluxe.bandcamp.com/"&gt;Daniel Deluxe&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>My First Review</title><link href="https://palevell.github.io/pelican/my-first-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-05:00</published><updated>2010-12-03T10:20:00-05:00</updated><author><name>Patrick</name></author><id>tag:palevell.github.io,2010-12-03:/pelican/my-first-review.html</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical&amp;nbsp;keyboard.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Following is a review of my favorite mechanical&amp;nbsp;keyboard.&lt;/p&gt;</content></entry><entry><title>My super title</title><link href="https://palevell.github.io/pelican/my-super-post1.html" rel="alternate"></link><published>2010-10-03T10:20:00-04:00</published><updated>2010-10-04T18:40:00-04:00</updated><author><name>Alexis Metaireau</name></author><id>tag:palevell.github.io,2010-10-03:/pelican/my-super-post1.html</id><summary type="html">&lt;p class="first last"&gt;Short version for index and&amp;nbsp;feeds&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;This is my Super&amp;nbsp;Page&lt;/p&gt;
+</content><category term="thats"></category><category term="awesome"></category></entry><entry><title>My Super Title 2</title><link href="https://palevell.github.io/pelican/my-super-post2.html" rel="alternate"></link><published>2010-10-03T10:20:00-04:00</published><updated>2010-10-04T18:40:00-04:00</updated><author><name>Alexis Metaireau</name></author><id>tag:palevell.github.io,2010-10-03:/pelican/my-super-post2.html</id><summary type="html">&lt;p&gt;Short version for index and&amp;nbsp;feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is my Super Page&amp;nbsp;2&lt;/p&gt;</content><category term="thats"></category><category term="awesome"></category></entry></feed>
