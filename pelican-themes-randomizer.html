@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Patrick" />
+        <meta name="keywords" content="pelican,pelican-themes" />
+        <meta name="description" content="To streamline testing operations, I opted to move the theme-picker out of the pelican settings file. With this setup, this script random_theme can be executed before building the site, as shown in the following example: ./random_theme ; make clean devserver — Enjoy!" />
+
+
+    <title>Pelican Themes Randomizer - Patrick's Place</title>
+
+        <link rel="stylesheet" href="https://palevell.github.io/ppc/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="https://palevell.github.io/ppc/theme/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://palevell.github.io/ppc/theme/css/pygments/native.css" rel="stylesheet" />
+    
+        <link href="https://palevell.github.io/ppc/theme/css/typogrify.css" rel="stylesheet" />
+    <link href="https://palevell.github.io/ppc/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+        <link href="https://palevell.github.io/ppc/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Patrick's Place ATOM Feed" />
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="https://palevell.github.io/ppc" title="Patrick's Place" class="collapsed">
+            <span class="glyphicon glyphicon-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="https://palevell.github.io/ppc/archives.html" title="Recent Articles" class="collapsed">
+            <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+    </li>
+                
+                <li class="nav-divider"></li>
+                <li id="share-small">
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
+                        <i class="fa fa-share-alt padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://palevell.github.io/ppc/pelican-themes-randomizer.html" title="Share via Facebook" target="popup">
+                            <i class="fa fa-facebook-square padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://palevell.github.io/ppc/pelican-themes-randomizer.html" title="Share via Google+" target="popup">
+                            <i class="fa fa-google-plus padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
+                            <i class="fa fa-twitter-square padding-small"></i>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fa fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="https://twitter.com/@palevell" title="@palevell"><i class="fa fa-@palevell-square fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/@PPC_Retweets" title="@PPC_Retweets"><i class="fa fa-@ppc_retweets-square fa-lg padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fa fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="https://palevell.github.io/ppc/">
+<img src="https://palevell.github.io/ppc/images/ppc-logo_180x.png" width="125" alt="Sitelogo"/>                     </a>
+                </li>
+                    <li class="nav-divider"></li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-latest">
+                            <span class="glyphicon glyphicon-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                    <li class="panel anti-panel"><ul id="collapse-latest" class="sidebar_submenu collapse in">
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-sub-categories-2.html" title="Evaluating Sub-Categories, Part Two">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Sub-Categories, Part Two
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-sub-categories-1.html" title="Evaluating Sub-Categories, Part One">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Sub-Categories, Part One
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/first-entry-in-articles.html" title="First Entry in Articles">
+                                <i class="fa fa-file-text padding-small"></i>
+                                First Entry in Articles
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/pelican-themes-randomizer.html" title="Pelican Themes Randomizer">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Pelican Themes Randomizer
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="hide-overflow" href="https://palevell.github.io/ppc/evaluating-pelican-themes.html" title="Evaluating Pelican Themes">
+                                <i class="fa fa-file-text padding-small"></i>
+                                Evaluating Pelican Themes
+                            </a>
+                        </li>
+                    <li>
+                        <a href="https://palevell.github.io/ppc/archives.html">
+                            <i class="fa fa-arrow-right padding-small"></i>
+                            More
+                        </a>
+                    </li>
+                    </ul></li>
+                <li class="nav-divider"></li>
+                <li id="share">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
+                        <i class="fa fa-share-alt padding-small"></i>
+                        Share
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://palevell.github.io/ppc/pelican-themes-randomizer.html" target="popup">
+                            <i class="fa fa-facebook-square padding-small"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://palevell.github.io/ppc/pelican-themes-randomizer.html" target="popup">
+                            <i class="fa fa-google-plus padding-small"></i>
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
+                            <i class="fa fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fa fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://twitter.com/@palevell" title="@palevell">
+                            <i class="fa fa-@palevell-square fa-lg padding-small"></i>
+                            @palevell
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/@PPC_Retweets" title="@PPC_Retweets">
+                            <i class="fa fa-@ppc_retweets-square fa-lg padding-small"></i>
+                            @PPC_Retweets
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://palevell.github.io/ppc/pages/about-us.html">
+                            <i class="fa fa-file-text padding-small"></i>
+                            About&nbsp;Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://palevell.github.io/ppc/pages/contact-us.html">
+                            <i class="fa fa-file-text padding-small"></i>
+                            Contact&nbsp;Us
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/bands.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            bands
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/blogging.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            blogging
+                            <span class="badge pull-right categorybadge">2</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="https://palevell.github.io/ppc/category/posts.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            posts
+                            <span class="badge pull-right categorybadge">3</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/review.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            Review
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/sub-category.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            sub-category
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/sub-sub-category.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            sub-sub-category
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://palevell.github.io/ppc/category/yeah.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            yeah
+                            <span class="badge pull-right categorybadge">2</span>
+                        </a>
+                    </li>
+                </ul></li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="https://palevell.github.io/ppc/pelican-themes-randomizer.html"
+                           rel="bookmark"
+                           title="Permalink to Pelican Themes Randomizer">
+                            Pelican Themes&nbsp;Randomizer
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2019-06-20T08:22:22-04:00"> Thu 20 June 2019</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="https://palevell.github.io/ppc/category/posts.html">posts</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="https://palevell.github.io/ppc/tag/pelican.html">pelican</a> /                 <a href="https://palevell.github.io/ppc/tag/pelican-themes.html">pelican-themes</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <p>To streamline testing operations, I opted to move the theme-picker out of the pelican settings&nbsp;file.</p>
+<p>With this setup, this script <code>random_theme</code> can be executed before building the site, as shown in the following&nbsp;example:</p>
+<div class="highlight"><pre><span></span>./random_theme <span class="p">;</span> make clean devserver
+</pre></div>
+
+
+<p>&#8212;&nbsp;Enjoy!</p>
+<script src="https://gist.github.com/palevell/111bad0abe970095746d1d85bdde20bf.js"></script>
+                </div>
+                <footer class="text-right">
+                    <p>- Patrick</p>
+                </footer>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+  <p id="post-share-links">
+    Share on:
+    <a href="https://sharetodiaspora.github.io/?title=Pelican%20Themes%C2%A0Randomizer&url=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html" target="_blank" title="Share on Diaspora">Diaspora*</a>
+    ❄
+    <a href="https://twitter.com/intent/tweet?text=Pelican%20Themes%C2%A0Randomizer&url=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html&hashtags=pelican,pelican-themes" target="_blank" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html" target="_blank" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html&title=Pelican%20Themes%C2%A0Randomizer&summary=To%20streamline%20testing%20operations%2C%20I%20opted%20to%20move%20the%20theme-picker%20out%20of%20the%20pelican%20settings%C2%A0file.%0AWith%20this%20setup%2C%20this%20script%20random_theme%20can%20be%20executed%20before%20building%20the%20site%2C%20as%20shown%20in%20the%20following%C2%A0example%3A%0A./random_theme%20%3B%20make%20clean%20devserver%0A%0A%E2%80%94%C2%A0Enjoy%21&source=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html" target="_blank" title="Share on LinkedIn">LinkedIn</a>
+    ❄
+    <a href="https://news.ycombinator.com/submitlink?t=Pelican%20Themes%C2%A0Randomizer&u=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html" target="_blank" title="Share on HackerNews">HackerNews</a>
+    ❄
+    <a href="mailto:?subject=Pelican%20Themes%C2%A0Randomizer&amp;body=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html" target="_blank" title="Share via Email">Email</a>
+    ❄
+    <a href="https://www.reddit.com/submit?url=https%3A//palevell.github.io/ppc/pelican-themes-randomizer.html&title=Pelican%20Themes%C2%A0Randomizer" target="_blank" title="Share via Reddit">Reddit</a>
+  </p>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                    &copy; 2019 Patrick
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="https://palevell.github.io/ppc/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://palevell.github.io/ppc/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="https://palevell.github.io/ppc/theme/js/pelican_twitchy.min.js"></script>
+
+</body>
+</html>
